@@ -14,6 +14,7 @@
 <p align="justify">
 Prática simples para a configuração de um ambiente utilizando a ideia de containers.
 </p>
+
 #### Docker
 <p align="justify">
 Um container é uma unidade padrão de software que empacota o código e todas as suas dependências para que o aplicativo seja executado de forma rápida e confiável de um ambiente de computação para outro.
@@ -38,9 +39,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Iniciar o container: `docker build -t nome-do-container localização-do-dockerfile`
   - Exemplo: `docker build -t paulohepimentel/dockernode .`
 </br>
+
 - Executar a aplicação: `docker run -p numero-da-porta -d nome-do-container`
   - Exemplo: `docker run -p 3000:3000 -d paulohepimentel/dockernode`
 </br>
+
 - Inicalizar o docker-compose: `docker-compose up`
 
 ---
